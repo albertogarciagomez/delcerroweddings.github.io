@@ -313,3 +313,13 @@
         .footer {
             font-weight: 200;
         }
+
+        .clean-link-text{
+            color: white;
+        }
+
+        .clean-link-text:hover{
+            opacity: .8;
+            color: white;
+
+        }
