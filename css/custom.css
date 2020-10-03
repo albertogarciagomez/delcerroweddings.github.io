@@ -80,11 +80,8 @@
 
 
         .carousel-item .title strong{
-            font-size: 52px;
-            font-weight: 100;
-            font-family: 'Spectral', serif !important;
-            
-            
+            font-size: 40px;
+            font-weight: 100;            
         }
 
         .carousel-item .subtitle {
@@ -323,3 +320,98 @@
             color: white;
 
         }
+
+
+        /* Galeria */
+
+        .galeria{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            margin: auto;
+            grid-gap: 10px;
+            width: 95%;
+            padding: 40px 0;
+        }
+
+        .galeria > a{
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .galeria img{
+            width: 100%;
+            margin: auto;
+            grid-gap: 10px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .lightbox{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #11111150;
+            transition: all .3s ease-in-out;
+            width: 100%;
+            height: 100vh;
+            z-index: 1000;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            display: none;
+            opacity: 0;
+        }
+        .lightbox img{
+            max-width: 75vw;
+            max-height: 70vh;
+        }
+
+        .lightbox:target{
+            transform: scale(1);
+            display: flex;
+            opacity: 1;
+        }
+        .close{
+            display: block; 
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            background: #fff;
+            text-decoration: none;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .next{
+            display: block; 
+            position: absolute;
+            right: 40px;
+            background-repeat: no-repeat;
+            background-image: url(../img/derecha.svg);
+            background-position-y: 50%;
+            background-position-x: 50%;
+            width: 40px;
+            border: 2px solid white;
+            /* margin: 30px; */
+            height: 40px;
+            border-radius: 50%;
+            background-size: 50%;
+        }
+        .prev{
+            display: block; 
+            position: absolute;
+            left: 40px;
+            background-repeat: no-repeat;
+            background-image: url(../img/izquierda.svg);
+            background-position-y: 50%;
+            background-position-x: 50%;
+            width: 40px;
+            border: 2px solid white;
+            /* margin: 30px; */
+            height: 40px;
+            border-radius: 50%;
+            background-size: 50%;
+        }
+
+        /* Fin Galería */
