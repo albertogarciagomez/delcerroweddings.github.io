@@ -1,0 +1,315 @@
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .carrusel-pantalla-100 {
+            height: 100vh;
+        }
+
+        .navbar-pantalla-100 {
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            color: white
+        }
+
+        .navbar-pantalla-100 a {
+            font-size: 14px;
+            color: white !important
+        }
+
+        .carouses-item img {
+            height: 100vh;
+            object-fit: cover;
+            width: 100%;
+            object-position: 50% 50%;
+            object-position: 0 0;
+        }
+
+        .carousel-inner {
+            height: 100vh;
+        }
+
+        .carousel-item .card-1 {
+            position: absolute;
+            text-align: center;
+            padding: 20px;
+            padding-top: 40vh;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            margin: auto;
+            color: white;
+            height: 100vh;
+            background-color: #00000050;
+        }
+
+        .carousel-control-next-icon {
+            background-image: url(../img/derecha.svg);
+            width: 40px;
+            border: 2px solid white;
+            /* margin: 30px; */
+            height: 40px;
+            border-radius: 50%;
+            background-size: 50%;
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url(../img/izquierda.svg);
+            width: 40px;
+            border: 2px solid white;
+            /* margin: 30px; */
+            height: 40px;
+            border-radius: 50%;
+            background-size: 50%;
+        }
+
+        
+
+        .carousel-item .card-2:hover .title {
+            transition: all .3s ease-in-out;
+            transform: scale(1.1);
+        }
+
+        .carousel-item .card-2 .title {
+            transition: all .3s ease-in-out;
+            
+        }
+
+
+        .carousel-item .title strong{
+            font-size: 52px;
+            font-weight: 100;
+            font-family: 'Spectral', serif !important;
+            
+            
+        }
+
+        .carousel-item .subtitle {
+            font-size: 16px;
+            font-weight: 300;
+
+        }
+
+        nav.navbar {
+            /* background: rgb(41,41,41); */
+            /* background: linear-gradient(180deg, rgba(41,41,41,1) 0%, rgba(64,64,64,0) 1%); */
+
+        }
+
+        .close {
+            float: right;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 0px;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            opacity: .5;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (min-width: 576px) {
+            .modal-dialog {
+                max-width: 80%;
+                margin: 1.75rem auto;
+            }
+        }
+
+        .footer {
+            background-color: #111;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer div {
+            color: white;
+            text-decoration: none;
+        }
+
+        .boton-ver-video {
+
+            padding: 5px;
+            border: 1px solid white;
+            width: auto;
+            margin: 0 auto;
+            width: 100px;
+        }
+
+        .carousel-item .card-2:hover .boton-ver-video {
+            transition: all .5s  ease-in-out;
+            background: #fff;
+            color: #111
+        }
+
+        .carousel-item img.d-block.w-100 {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+
+        button.navbar-toggler {
+            border: 0;
+        }
+
+        .navbar-toggler-icon {
+            color: white;
+            width: auto;
+            height: auto;
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background: none;
+        }
+
+
+        .vimeo-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .vimeo-wrapper iframe {
+            width: 100vw;
+            height: 56.25vw;
+            /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+            min-height: 100vh;
+            min-width: 177.77vh;
+            /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .main-title {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #00000050;
+            color: white;
+        }
+
+        .main-title img {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .arrow-home {
+            position: absolute;
+            bottom: 5%;
+            left: 49.5%;
+        }
+
+        .arrow-home svg {
+            width: 16px;
+            position: relative;
+            animation-name: arrow-movement;
+            animation-duration: .8s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes arrow-movement {
+            0% {
+                top: -20px;
+            }
+
+            100% {
+                top: 20px;
+            }
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #111;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer div {
+            color: white;
+            text-decoration: none;
+        }
+
+        .formulario-contacto h2{
+            color: white;
+            padding-top: 50px;
+            padding-top: 50px;
+            text-align:center;
+        }
+        .formulario-contacto label{
+            color: white
+            
+        }
+
+        .formulario-contacto .text-field{
+            background-color: transparent;
+            border-radius: 0;
+            color: white;
+            border: 1px solid white;
+            transition: all .5s  ease-in-out;
+         
+        }
+        .formulario-contacto .text-field:focus{
+           box-shadow: none;
+           border: 1px solid #ffffff80;
+           transition: all .5s  ease-in-out;
+
+
+        }
+        .formulario-contacto input.text-field{
+            height: 50px;
+        }
+
+        .formulario-contacto textarea.text-field{
+            height: 150px;
+        }
+        .formulario-contacto .button-submit{
+            border: 0px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 1px solid white;
+            transition: all .5s ease-in-out;
+
+        }
+
+        .formulario-contacto .button-submit:hover{
+            transition: all .5s ease-in-out;
+            background: transparent;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .footer {
+            font-weight: 200;
+        }
